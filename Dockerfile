@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER dev@cedvan.com
 
 # Install requirements
@@ -29,12 +29,12 @@ RUN apt-get update -qq \
         git \
         apt-transport-https \
         daemontools \
-        php7.1-fpm \
-        php7.1-json \
-        php7.1-cli \
-        php7.1-intl \
-        php7.1-curl \
-        php7.1-xml \
+        php7.2-fpm \
+        php7.2-json \
+        php7.2-cli \
+        php7.2-intl \
+        php7.2-curl \
+        php7.2-xml \
         nginx \
         apache2-utils
 
