@@ -36,7 +36,8 @@ RUN apt-get update -qq \
         php7.2-curl \
         php7.2-xml \
         nginx \
-        apache2-utils
+        apache2-utils \
+        sudo
 
 # Configure PHP and Nginx
 RUN mkdir /run/php \
@@ -72,6 +73,5 @@ RUN apt-get -qqy --purge autoremove \
 VOLUME /data/toran-proxy
 
 EXPOSE 80
-EXPOSE 443
 
 CMD /scripts/toran-proxy/launch.sh
